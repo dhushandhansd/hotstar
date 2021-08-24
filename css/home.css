@@ -177,10 +177,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .login-btn {
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .login {
