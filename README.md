@@ -2,9 +2,11 @@
 
 # Feature
 
-- Rsponsive Search Bar
-- Responsive Navbar
-- Movie Banner
+ - Rsponsive Search Bar
+ - Responsive Navbar
+ - Movie Banner
+ - Home Page Footer
+ - Movies Card with Effects
 
 # UI Design
 
@@ -17,9 +19,8 @@ Pull requests are welcomed, do raise an issue, we are happy to solve it.
 
 Shree Dhushandhan
 
+## Live App 
+https://dhushandhansd.github.io/hotstar.github.io/
 
 ## Yet to update
- - Home Page Footer
- - Movies Hover Effect
- - Scrollable Option
  - Login, Subscription Page
