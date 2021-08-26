@@ -458,23 +458,6 @@ body {
     font-size: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     width: 100%;
     height: auto;
@@ -578,6 +561,283 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.login-popup-card-container {
+    transition: all .3s ease-out;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.308) ;
+    position: fixed;
+    top: 0;
+    z-index: 4;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.login-card {
+    width: 456px;
+    height: 450px;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #192133, #111826);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-header {
+    flex: .1;
+    position: relative;
+}
+
+.back-btn-container {
+    display: none;
+    position: absolute;
+    left: 0;
+    margin-top: 13px;
+    margin-left: 50px;
+}
+
+.back-btn {
+    width: 35px;
+    height: 35px;
+    fill: #1f80e0;
+    cursor: pointer;
+}
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    background: url('/assets/close-btn.svg') top right no-repeat;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.body-content {
+    width: 100%;
+    height: 100%;
+}
+
+.login-body1 {
+    flex: .9;
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+    margin-left: 12%;
+    margin-bottom: 12%;
+    margin-right: 5%;
+}
+
+.body-title h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.body-fb-email {
+    width: 74%;
+    height: 50px;
+    background-color: rgba(31,127,224,0.1);
+    border: 1px solid #1f80e0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+    cursor: pointer;
+}
+.body-fb-email h3{
+    color: #1f80e0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.seperator {
+    width: 73%;
+    height: 35px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mobile-input {
+    width: 73%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #1f80e0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.country-code {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mobile-input-field {
+    width: 200px;
+    height: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: whitesmoke;
+    border: none;
+    border-left: 1px solid #585858;
+    background: transparent;
+}
+
+.mobile-input-field:focus {
+    outline: none;
+}
+
+
+.login-content2 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.login-body2 {
+    display: none;
+    flex: .9;
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+    margin-left: 12%;
+    margin-bottom: 12%;
+    margin-right: 5%;
+}
+
+.body-title2 h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email-input {
+    width: 73%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #1f80e0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.email-input-field {
+    width: 200px;
+    height: 25px;
+    font-size: 16px;
+    color: whitesmoke;
+    border: none;
+    background: transparent;
+}
+
+
+.email-input-field:focus {
+    outline: none;
+}
+
+
+.button {
+    width: 74%;
+    height: 50px;
+    background-color: #1f80e0;
+    border: 1px solid #1f80e0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.login-fb-container {
+    width: 74%;
+    height: 50px;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fb-logo img {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.fb-text {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.phone-login {
+    display: none;
+    flex: .9;
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+    margin-left: 12%;
+    margin-bottom: 12%;
+    margin-right: 5%;
+}
+
+.login-content3 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.body-title3 h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top-margin {
+    margin-top: 13%;
+}
+
+.agreement-container {
+    margin-top: 10px;
+}
+
+.agreement-container p {
+    color: #919191;
+    font-size: 11px;
+    user-select: none;
+}
+
+.blue-link {
+    color: #1f80e0;
+    cursor: pointer;
+}
+
+
+
 
 
 @media only screen and (max-width:1024px){

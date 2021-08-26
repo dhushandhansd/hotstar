@@ -115,8 +115,8 @@
                         SUBSCRIBE
                     </div>
                 </div>
-                <div class="login-btn">
-                    <div class="login">
+                <div onclick="loginPopup()" class="login-btn">
+                    <div  class="login">
                         LOGIN
                     </div>
                 </div>
@@ -1175,6 +1175,98 @@
                 </div>
             </div>
         </div>
+
+        <div id="popup" class="login-popup-card-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <div onclick="toEmailLogin()" id="back-btn-id" class="back-btn-container">
+                        <svg class="back-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M0 0h24v24H0z" fill="none"/><path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+                            </svg>
+                    </div>
+                    <div onclick="closePopup()" class="close-btn"> 
+                    </div>
+                </div>
+                <div id="login-card1" class="login-body1">
+                    <div class="body-content">
+                        <div class="body-title">
+                            <h4>Login to continue</h4>
+                        </div>
+                        <div onclick="facebookLogin()" class="body-fb-email">
+                            <h3>Have a Facebook/Email account?</h3>
+                        </div>
+                        <div class="seperator">
+                            <p>or</p>
+                        </div>
+                        <div class="mobile-input">
+                            <div class="mobile-container">
+                                <h3 class="country-code">+91</h3>
+                                <input oninput="numberOver()" class="mobile-input-field" type="numeric" placeholder="Enter your mobile number">
+                            </div>
+                            <div class="error-text-container">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="login-card2" class="login-body2">
+                    <div class="login-content2">
+                        <div class="body-title2">
+                            <h4>Have an Email or Facebook account?</h4>
+                        </div>
+                        <div class="email-input">
+                            <input class="email-input-field" type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="continue-btn-container">
+                            <div class="button">
+                                CONTINUE
+                                <img src="/assets/next-btn.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="seperator">
+                            <p style="font-size: 10px;color: rgba(245, 245, 245, 0.349);">OR</p>
+                        </div>
+                        <div class="login-fb-container">
+                            <div class="fb-logo">
+                                <img src="./assets/facebook.png" alt="facebook">
+                            </div>
+                            <div class="fb-text">
+                                LOGIN WITH FACEBOOK
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="login-card3" class="phone-login">
+                    <div class="login-content3">
+                        <div class="body-title3">
+                            <h4>Continue using Phone</h4>
+                        </div>
+                        <div class="mobile-input top-margin">
+                            <div class="mobile-container">
+                                <h3 class="country-code">+91</h3>
+                                <input class="mobile-input-field" type="numeric" placeholder="Enter your mobile number">
+                            </div>
+                            <div class="error-text-container">
+
+                            </div>
+                        </div>
+                        <div class="continue-btn-container">
+                            <div class="button">
+                                CONTINUE
+                                <img src="/assets/next-btn.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="agreement-container">
+                            <p>By Proceeding you agree to the<span class="blue-link">Terms of use</span> and <span class="blue-link">Privacy Policy</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="./script/home.js" defer></script>
 </body>
 </html>
