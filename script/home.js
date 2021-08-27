@@ -36,3 +36,28 @@ function numberOver() {
     backButton.style.display = 'block'
     phoneLogin.style.display = 'block'
 }
+
+let imageSlide = 1
+startCarousal(imageSlide)
+
+let scroll = document.getElementById('cards-scrollable-container')
+
+function scroll(slideDirection) {
+    startCarousal(imageSlide += slideDirection)
+}
+
+function startCarousal(slide) {
+    let carousalCount = document.getElementsByClassName('carousal')
+    if(slide > carousalCount.length) {
+        imageSlide = 1
+    }
+    if(slide < 1) {
+        imageSlide = carousalCount.length
+    }
+
+    for(let i = 0; i<carousalCount.length; i++) {
+        carousalCount.style.display = 'none'
+    }
+
+    carousalCount[imageSlide-1].style.display = 'block'
+}

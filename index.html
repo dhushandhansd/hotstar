@@ -11,6 +11,8 @@
     <meta property='og:site_name' content="Disney+ Hotstar - UKSD">
     <link rel="icon" href="./assets/hotstar.ico">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/homeFlex.css">
+    <link rel="stylesheet" href="./css/scroller.css">
     <title>Hotstar + UKSD</title>
 </head>
 <body>
@@ -126,6 +128,7 @@
         <div class="content-container">
 
             <div class="carousal-container">
+
                 <div class="carousal">
                     <div class="image-holder">
                         <div class="text-container">
@@ -142,6 +145,61 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="carousal">
+                    <div class="image-holder">
+                        <div class="text-container">
+                            <h2 class="image-title">Luca</h2>
+                            <h4 class="image-short">1 hr 35 min 2021 Family U/A 7+</h4>
+                            <h4 class="image-detail">The movie is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato,pasta and endless scooter rides.</h4>
+                        </div>
+                        <div class="image">
+                            <div class="gradient-container">
+                            </div>
+                            <div class="image-container">
+                                <img src="./assets/carousal/8.webp" alt="luca">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousal">
+                    <div class="image-holder">
+                        <div class="text-container">
+                            <h2 class="image-title">Luca</h2>
+                            <h4 class="image-short">1 hr 35 min 2021 Family U/A 7+</h4>
+                            <h4 class="image-detail">The movie is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato,pasta and endless scooter rides.</h4>
+                        </div>
+                        <div class="image">
+                            <div class="gradient-container">
+                            </div>
+                            <div class="image-container">
+                                <img src="./assets/carousal/8.webp" alt="luca">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousal">
+                    <div class="image-holder">
+                        <div class="text-container">
+                            <h2 class="image-title">Luca</h2>
+                            <h4 class="image-short">1 hr 35 min 2021 Family U/A 7+</h4>
+                            <h4 class="image-detail">The movie is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato,pasta and endless scooter rides.</h4>
+                        </div>
+                        <div class="image">
+                            <div class="gradient-container">
+                            </div>
+                            <div class="image-container">
+                                <img src="./assets/carousal/8.webp" alt="luca">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a onclick="scroll(-1)" class="prev">&#10094;</a>
+                <a onclick="scroll(1)" class="next">&#10095;</a>
+
             </div>
 
             <div class="movies-container">
@@ -151,7 +209,337 @@
                         <h3>Latest & Trending</h3>
                     </div>
 
-                    <div class="cards">
+                    <div id="movies-scroller" class="scroller-container">
+                        <div onclick="leftScroll()" class="left-scroller-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/></svg>
+                        </div>
+                        <div onclick="rightScroll()" class="right-scroller-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+                        </div>
+                    </div>
+
+                    <div id="cards-scrollable-container" class="cards">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/1.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Bhuj: The Pride of India</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>1 hr 53 min, Action, Hostorical, Hindi, Tamil, Telugu, 2021.</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/2.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>The Legend of Hanuman</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>Mythology, Hotstar Specials-UKSD</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Hanuman has released his limitless powers and..</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/3.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>City of Dreams</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>1 hr 53 min, Action, Hostorical, Hindi, Tamil, Telugu, 2021.</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/4.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Hungama 2</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>1 hr 53 min, Action, Hostorical, Hindi, Tamil, Telugu, 2021.</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/5.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Collar Bomb</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>1 hr 53 min, Action, Hostorical, Hindi, Tamil, Telugu, 2021.</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/6.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Grahan</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>Drama,Thriller,Hotstar Specials-UKSD</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/7.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Luca</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>Tamil</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/8.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Shaadisthan</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>1 hr 53 min, Action, Hostorical, Hindi, Tamil, Telugu, 2021.</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/9.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Loki</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>Superhero, Action, Marvel.</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/movie-cards/10.webp" alt="">
+                            </div>
+                            <div class="sep-container">
+                            </div>
+                            <div class="black-container"></div>
+                            <div class="card-title flex-center">
+                                <h4>Raya and the Legend Dragon</h4>
+                            </div>
+                            <div class="card-short flex-center">
+                                <h4>English, Tamil, Hindi, Telugu, 2021.</h4>
+                            </div>
+                            <div class="card-detail flex-center">
+                                <h4>Running against the clock, IAF Squadron Leader Vijay</h4>
+                            </div>
+                            <div class="card-actions flex-center">
+                                <div class="watch-movie">
+                                    <div class="watch-icon"></div>
+                                    <div class="watch-text">
+                                        WATCH MOVIE
+                                    </div>
+                                </div>
+                                <div class="add-to-watchlist">
+                                    <div class="watchlist-icon"></div>
+                                    <div class="watchlist-text">
+                                        ADD TO WATCHLIST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card">
                             <div class="card-image">
                                 <img src="./assets/movie-cards/1.webp" alt="">
