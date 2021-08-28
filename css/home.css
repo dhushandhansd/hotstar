@@ -467,13 +467,10 @@ body {
     z-index: 999;
 }
 
-.watchlist-icon {
+.watchlist-icon img {
     width: 10px;
     height:10px;
     z-index: 999;
-    background-size: cover;
-    background-position: center;
-    background: url('/assets/add.svg') left top no-repeat;
 } 
 
 .watch-text, .watchlist-text {

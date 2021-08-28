@@ -6,7 +6,7 @@ let popup = document.getElementById('popup')
 
 let backButton = document.getElementById('back-btn-id')
 
-function loginPopup() {
+function loginModel() {
     popup.style.display = 'block'
     popup.style.display = 'flex'
     popup.style.transition = 'all .3s ease-out'
@@ -37,27 +37,27 @@ function numberOver() {
     phoneLogin.style.display = 'block'
 }
 
-let imageSlide = 1
-startCarousal(imageSlide)
+// let imageSlide = 1
+// startCarousal(imageSlide)
 
-let scroll = document.getElementById('cards-scrollable-container')
+// let scroll = document.getElementById('cards-scrollable-container')
 
-function scroll(slideDirection) {
-    startCarousal(imageSlide += slideDirection)
-}
+// function scroll(slideDirection) {
+//     startCarousal(imageSlide += slideDirection)
+// }
 
-function startCarousal(slide) {
-    let carousalCount = document.getElementsByClassName('carousal')
-    if(slide > carousalCount.length) {
-        imageSlide = 1
-    }
-    if(slide < 1) {
-        imageSlide = carousalCount.length
-    }
+// function startCarousal(slide) {
+//     let carousalCount = document.getElementsByClassName('carousal')
+//     if(slide > carousalCount.length) {
+//         imageSlide = 1
+//     }
+//     if(slide < 1) {
+//         imageSlide = carousalCount.length
+//     }
 
-    for(let i = 0; i<carousalCount.length; i++) {
-        carousalCount.style.display = 'none'
-    }
+//     for(let i = 0; i<carousalCount.length; i++) {
+//         carousalCount.style.display = 'none'
+//     }
 
-    carousalCount[imageSlide-1].style.display = 'block'
-}
+//     carousalCount[imageSlide-1].style.display = 'block'
+// }
